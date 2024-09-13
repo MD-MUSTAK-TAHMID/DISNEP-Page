@@ -1,0 +1,318 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+ul{
+    list-style-type: none;
+}
+/* ==================================================================== */
+
+nav{
+    padding: 20px 0;
+    background: white;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .container .menu ul{
+    display: flex;
+    column-gap: 15px;
+}
+nav .container .menu ul li a{
+    font-size: 24px;
+    padding: 15px 30px;
+    border-bottom: 4px solid transparent;
+    transition: .4s;
+}
+nav .container .menu ul li a:hover{
+    background: rgba(0, 0, 0, 0.25);
+    border-bottom: 4px solid rgb(102, 203, 237);
+}
+nav .container .logo a img{
+    width: 170px;
+}
+#Banner .main{
+    padding: 200px 0;
+    background:url(../Images/nature.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+#Banner .main .overly{
+    width: 100%;
+    height: 100%;
+    background: #00000060;
+    position: absolute;
+    z-index: -1;
+}
+#Banner .main p{
+    text-align: center;
+    font-size: 30px;
+    width: 385px;
+    color: white;
+    padding: 30px 0;
+}
+#Banner .main h1{
+    font-size: 70px;
+    color: white;
+}
+#Banner .main h4{
+    font-size: 45px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 3px solid white;
+    padding: 15px 30px;
+    transition: .4s;   
+}
+#Banner .main h4:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+}
+#Banner_2 .container .main{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+#Banner_2 .container .main .box{
+    width: 23%;
+    padding:20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Banner_2 .container .main .box i{
+    font-size: 35px;
+    color: rgb(102, 203, 237);
+    /* padding: 30px; */
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    border-radius: 50%;
+    border: 3px solid rgb(102, 203, 237);
+    transition: .4s;
+}
+#Banner_2 .container .main .box i:hover{
+    color: white;
+    background-color: rgb(102, 203, 237);
+    border: 3px solid transparent;
+}
+#Banner_2 .container .main .box p{
+    width: 280px;
+    text-align: center;
+    padding: 20px;
+}
+#Banner_2 .container .main .box h3{
+    padding-top: 20px;
+}
+#Banner_2 .container .main .box button a {
+    padding: 5px 10px;
+    color: rgb(102, 203, 237);
+    background:white;
+    border: 2px solid rgb(102, 203, 237);
+    transition: .4s;
+}
+#Banner_2 .container .main .box button a:hover{
+    color: white;
+    background: rgb(102, 203, 237);
+    border: 2px solid rgb(102, 203, 237);
+}
+#Banner_3{
+    padding: 20px;
+    background-color: rgb(200, 200, 200);
+}
+#Banner_3 .container{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+#Banner_3 .container h2{
+    text-align: center;
+    font-size: 35px;
+}
+#Banner_3 .container .main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+#Banner_3 .container .main .one{
+    width: 32%;
+    height: 250px;
+    background: url(../Images/nature2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#Banner_3 .container .main .three{
+    background: url(../Images/man\ with\ nature.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#Banner_3 .container .main .Four{
+    background: url(../Images/leaf\ in\ nature.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#Banner_3 .container .main .Five{
+    background: url(../Images/game\ controller.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#Banner_3 .container .main .Six{
+    background: url(../Images/Buldings.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#Banner_3 .container .main .Seven{
+    background: url(../Images/Flowers.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+#Banner_3 .container .main .one .two{
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .4s;
+}
+#Banner_3 .container .main .one:hover .two{
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.592);
+}
+#Banner_3 .container .main .one .two i{
+    color: white;
+    font-size: 30px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+#Banner_3 .container .main .one .two i:nth-child(1){
+    background-color: darkblue;
+}
+#Banner_3 .container .main .one .two i:nth-child(2){
+    background-color: rgb(1, 163, 216);
+}#Banner_3 .container .main .one .two i:nth-child(3){
+    background-color: red;
+}
+#Banner_3 .container button a{
+    font-size: 26px;
+    text-align: center;
+    padding: 10px 15px;
+    color: white;
+    background: rgb(0, 174, 232);
+}
+footer{
+    padding-top: 20px;
+    background: url(../Images/Pattern.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+footer .container .main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .container .main .one h3{
+    font-size: 25px;
+    color:white
+}
+footer .container .main .one p{
+    font-size: 16px;
+    color:rgba(255, 255, 255, 0.768);
+    width: 410px;
+}
+footer .container .main .one .fa-brands{
+    font-size: 20px;
+    padding: 20px 5px;
+}
+footer .container .main .one .fa-facebook-f{
+    color: darkblue;
+}
+footer .container .main .one .fa-twitter{
+    color: rgb(1, 163, 216);
+}
+footer .container .main .one .fa-google{
+    color: red;
+}
+footer .container .main .one ul li a{
+    color:rgb(205, 161, 207);
+    font-size: 16px;
+}
+footer .container .main form input{
+    margin-right:10px ;
+    margin-top: 30px;
+    height: 40px;
+    width: 260px;
+    padding-left:10px ;
+}
+footer .container .main form .input{
+    margin-top:30px ;
+    width: 533px;
+    padding: 65px 0 ;
+}
+footer .container .main form button{
+    font-size: 25px;
+    padding:10px 30px ;
+    margin-top:20px ;
+    color:white;
+    background: rgb(1, 163, 216);
+    border: 3px solid rgb(1, 163, 216);
+    transition: .4s;
+}
+footer .container .main form button:hover{
+    background: white;
+    color:rgb(1, 163, 216);
+    border: 3px solid rgb(1, 163, 216);
+}
+footer .container h2{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+footer .Copyright{
+    padding: 20px 0;
+    text-align: center;
+    background: #2d57ff;
+    color:white;
+    margin-top: 60px;
+}
